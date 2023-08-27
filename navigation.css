@@ -1,0 +1,53 @@
+    .header-link-list {
+        display: flex;
+        align-items: flex-end;
+        padding-top: 15px;
+      }
+      
+      .header-link-list li {
+        list-style: none;
+      }
+
+      .header-title {
+        font-size: 30px;
+        margin-left: 30px;
+        margin-right: 65%;
+        color: white;
+      }
+      /*aタグ内にテキストが書かれているから、aタグにcolorをつけないと文字色が変化しない
+      逆にその他はlist itemはラップしただけなのでいける。*/
+      .header-link {
+        display: block;
+        text-decoration: none;
+        color: white;
+        margin-right: 35px;
+      }
+
+      .site-header{
+        position: sticky;
+        background-color: dimgray;
+        top: 0;
+        width: 100%;
+        height: 70px;
+        /* padding: 5px; */
+        background: #333;
+        color: #fff;
+      }
+      .headline {
+        font-size: 50px;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-bottom: 0px;
+        }
+        .my-works {
+            padding-bottom: 200px;
+        }
+        .my-works li{
+            list-style:none;
+        }
+        .about-me {
+            padding-bottom: 200px;
+        }
+        .about-me li{
+            list-style:none;
+        }

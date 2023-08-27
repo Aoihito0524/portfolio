@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="navigation.css">
+<link rel="stylesheet" type="text/css" href="my_works.css">
+<html>
+<head>
+</head>
+<body>
+    <!-- 制作物 -->
+    <div class="site-header">
+    <nav>
+        <ul class="header-link-list">
+          <li class="header-title">Portfolio</li>
+          <li><a href="#my-works-pos" class="header-link">Works</a></li>
+          <li><a href="#about-me-pos" class="header-link">AboutMe</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- 制作物 -->
+<a name="my-works-pos"></a>
+<ul class="my-works">
+    <li>
+        <div class="headline">
+            <p>My Works</p>
+        </div>
+    </li>
+    <li>
+        <div class="app-introduction">
+            <img src="AppIcon.png" width="140px" height="140px" class="app-icon">
+            <ul class="app-descriptions">
+                <li class="app-name">
+                    <p>コンパクト予定表</p>
+                </li>
+                <li>
+                    <ul class="duration-and-store">
+                        <li>
+                            <p class="develop-duration">制作期間: 1ヶ月</p>
+                        </li>
+                        <li>
+                            <a href="https://apps.apple.com/app/コンパクト予定表-今日のタスクを視覚的に管理/id6458393988">
+                                <p class="appstore">AppStore</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="detail">
+                    <ul class="detail-contents">
+                        <li>
+                            <ul class="description-item">
+                                <li><p>GitHub:</p></li>
+                                <li><a href="https://github.com/Aoihito0524/CompactSchedule"><p>https://github.com/Aoihito0524/CompactSchedule</p></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="description-item">
+                                <li><p>開発ツール</p></li>
+                                <li><p>Xcode, GitHub</p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="description-item">
+                                <li><p>使用技術</p></li>
+                                <li><p>SwiftUI, Realm</p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="description-item">
+                                <li><p>アプリへのこだわり</p></li>
+                                <li><p>シンプルさと機能美を追求し、ユーザーにストレスなく使ってもらえるよう意識した。</p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="description-item">
+                                <li><p class="develop-effortpoint">開発へのこだわり</p></li>
+                                <li><p>MVVMで設計し、extensionやgenericsを使って可読性の高いコードを目指した。Realmを使うのは初めてで使いこなすことはできなかったが、Realm独自のプロパティラッパーを生かしてリアルタイムで変更を反映するCLUD機能を実装できた。</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="read-more">read more</p>
+                </li>
+            </div>
+        </div> 
+        <script>
+            const read_more = document.querySelectorAll(".read-more");
+            function toggle() {
+              const content = this.previousElementSibling;
+              console.log(this)
+              this.classList.toggle("close");//開閉ボタンの切り替え
+              content.classList.toggle("is-open");//リスト部分の表示の切り替え
+              let list_is_open = content.classList.contains("is-open")
+              this.textContent = list_is_open ? "close" : "read more" //開閉ボタンの文字切り替え
+            }
+        
+            for (let i = 0; i < read_more.length; i++) {
+                read_more[i].addEventListener("click", toggle);
+            }
+        </script>
+    </li>
+</ul>
+<!-- 自己紹介 -->
+<a name="about-me-pos"></a>
+<ul class="about-me">
+    <li>
+        <div class="headline">
+            <p>About Me</p>
+        </div>
+
+    </li>
+    <li>
+        <ul class="image-and-introduction">
+            <li>
+                <!-- <div class="image-kari"></div> 画像 -->
+                <img src="SelfPhoto.png" width="140px" height="160px" class="app-icon">
+            </li>
+            <li>
+                <p>　金沢大学数物科学類の木村友祐です。プログラマとして働き経験を積むため、今年の5月から休学して上京しています。大学入学後にプログラミングの授業を受けてプログラミングに興味を持ち、その後一年半ほどSwiftを独学しました。SwiftUIを扱うことができ、データバインディングやライフサイクルを意識したコーディングができます。データベースはCoreData、FirebaseFirestore、RealmSwiftを使った経験があります。実務経験はありません。</p>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+</body>
+</html>

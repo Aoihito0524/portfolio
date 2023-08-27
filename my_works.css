@@ -1,0 +1,76 @@
+
+        .app-introduction{
+            display: flex;
+        }
+        .app-descriptions{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .app-icon{
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        .detail-contents {
+            text-align: left;
+            line-height: 0;
+            height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition-duration: 0.4s;
+          }
+        .detail-contents.is-open {
+            display: block;
+            padding: 30px;
+            line-height: normal;
+            height: auto;
+            opacity: 1;
+        }
+        .read-more {
+            color: #fff;
+            background-color: black;
+            cursor: pointer;
+            cursor: hand;
+            text-align: center;
+            width: 240px;
+            transition-duration: 0.6s;
+        }
+        .read-more.close {
+            width: 100%;
+            transition-duration: 0s;
+        }
+        .description-item {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        .description-item li{
+            padding-right: 25px;
+        }
+        .duration-and-store {
+            padding: 0;
+            display: flex;
+        }
+        .duration-and-store li{
+            padding-right: 30px;
+            list-style:none;
+            line-height: 0px;
+        }
+        .app-name {
+            line-height: 0px;
+            font-size: 30px;
+        }
+        .image-and-introduction {
+            display: flex;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .image-kari {
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            margin-right: 50px;
+        }
+        .develop-effortpoint {
+            white-space: nowrap;
+        }
